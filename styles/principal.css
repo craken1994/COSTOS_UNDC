@@ -1,0 +1,56 @@
+.contenedor.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el contenedor ocupe el 100% de la altura del body */
+}
+
+.contenedor.principal h1 {
+    font-size: 60px;
+    color: var(--color-blue);
+    margin: 30px 0; /* Márgenes iguales arriba y abajo */
+    font-weight: 800;
+    line-height: 0.9;
+}
+
+.contenedor.principal h1 span {
+    display: block;
+}
+
+.contenedor.principal .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contenedor.principal .btn {
+    padding: 15px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 320px;
+    margin: 8px;
+    font-weight: 600;
+}
+
+.contenedor.principal .btn-blue {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.contenedor.principal .btn-red {
+    background-color: var(--color-red);
+    color: white;
+}
+
+.contenedor.principal .btn-green {
+    background-color: var(--color-green);
+    color: black;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

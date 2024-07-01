@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('styles/principal.css');
+@import url('styles/lista-ordenes.css');
+@import url('styles/crear-orden.css');
+@import url('styles/calcular-costo.css');
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-blue: #0727F5;
+    --color-red: #FF0000;
+    --color-green: #07F58F;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.contenedor {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}

@@ -1,0 +1,118 @@
+/* El modal (por defecto oculto) */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se sitúa por encima de todo el contenido */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilita el scroll si el contenido es demasiado grande */
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.4); /* Color de fondo con opacidad */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    padding: 80px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    height: 70%;
+    max-width: 700px; /* Máximo ancho del modal */
+    border-radius: 25px;
+    text-align: center; /* Centra el texto del contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Botón para cerrar el modal */
+.close {
+    color: #aaa;
+    align-self: flex-end; /* Alinea el botón de cerrar a la derecha */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos adicionales para los botones del modal */
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.modal-buttons .btn{
+    background-color: var(--color-red);
+    color: white;
+}
+
+/* Estilos para h1 y h2 en el modal */
+.modal-content h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-red); /* Color para h1 */
+    margin-bottom: 5x; /* Margen inferior */
+}
+
+.modal-content h2 {
+    font-size: 30px;
+    color: var(--color-blue); /* Color para h2 */
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    color: var(--color-red); /* Color para h3 */
+}
+
+.modal-content .seccion {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el contenido a la izquierda */
+    line-height: 1; /* Ajustar la altura de línea */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+}
+
+.modal-content .seccion input{
+    padding: 5px 10px ;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 300px; /* Ajusta el tamaño del input según sea necesario */
+    margin-bottom: 5px;
+}
+
+.modal-content .seccion p{
+    font-size: 20px;
+    color: var(--color-blue);
+    margin:0 0 10px 0;
+    font-weight: 700;
+}

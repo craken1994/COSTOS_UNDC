@@ -1,0 +1,101 @@
+.contenedor.lista-ordenes h1 {
+    font-size: 45px;
+    color: var(--color-blue);
+    margin-bottom: 20px;
+    font-weight: 900;
+    line-height: 0.3;
+}
+
+.contenedor.lista-ordenes h2 {
+    font-size: 25px;
+    color: var(--color-blue);
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buscar label {
+    font-size: 18px;
+    color: var(--color-red);
+    font-weight: 700;
+}
+
+.buscar input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.ordenes {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.ordenes th, .ordenes td {
+    padding: 5px;
+    text-align: center;
+}
+
+.ordenes th {
+    background-color: var(--color-red);
+    color: white;
+    border-radius: 10px;
+}
+
+.ordenes td {
+    border-radius: 0;
+}
+
+.ordenes .completado {
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.ordenes .en-proceso {
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.accion-ver {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.accion-ver img {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+.contenedor.lista-ordenes .btn {
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    margin: 10px auto;
+    font-weight: 600;
+}
+
+.contenedor.lista-ordenes .btn-green {
+    background-color: var(--color-green);
+    color: black;
+}

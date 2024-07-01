@@ -1,0 +1,99 @@
+.contenedor.crear-orden h1 {
+    font-size: 45px;
+    color: var(--color-blue);
+    margin-bottom: 20px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.contenedor.crear-orden .orden-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el contenido a la izquierda */
+    line-height: 0.8; /* Ajustar la altura de línea */
+    margin: 0 auto; /* Centrar el contenedor en la pantalla */
+    width: 50%; /* Ajusta el ancho según sea necesario */
+}
+
+.contenedor.crear-orden .form-group {
+    width: 100%; /* Hacer que el grupo ocupe todo el ancho del contenedor */
+    display: flex; /* Usar flexbox para alinear los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin-bottom: 10px; /* Añadir un margen inferior */
+}
+
+.contenedor.crear-orden .form-group .label-container {
+    flex: 1; /* Hacer que el contenedor de la etiqueta ocupe el mismo ancho que el input */
+}
+
+.contenedor.crear-orden .form-group label {
+    font-size: 20px;
+    color: var(--color-red);
+    font-weight: 700;
+    white-space: nowrap; /* Evitar que el texto de la etiqueta se desborde */
+}
+
+.contenedor.crear-orden .form-group label span {
+    color: var(--color-blue); /* Cambiar el color del span */
+}
+
+.contenedor.crear-orden .form-group input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    max-width: 350px; /* Ancho máximo del input */
+    margin-left: 10px; /* Añadir margen entre label y input */
+    flex: 2; /* Hacer que el input ocupe el doble de espacio que la etiqueta */
+}
+
+.contenedor.crear-orden .form-group-button {
+    display: flex;
+    justify-content: center; /* Centrar el botón dentro del grupo */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho */
+    margin-bottom: 10px;
+}
+
+.contenedor.crear-orden .orden-form button {
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: var(--color-red);
+    color: white;
+    font-weight: 600;
+    margin: 0; /* Eliminar margen adicional */
+}
+
+.contenedor.crear-orden .ordenes-existentes h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    line-height: 1;
+    background-color: var(--color-green);
+    border-radius: 30px;
+    padding: 8px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.contenedor.crear-orden .btn {
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    margin: 10px auto;
+    font-weight: 600;
+}
+
+.contenedor.crear-orden .btn-green {
+    background-color: var(--color-green);
+    color: black;
+}
